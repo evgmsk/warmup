@@ -21,4 +21,8 @@ describe('warmup', () => {
     const fahrenheit = warmup(40);
     assert.deepEqual(fahrenheit, 104);
   });
+    it('warm undefined', () => {
+        const fahrenheit = warmup("not a number");
+        assert.deepEqual(fahrenheit, undefined);
+    });
 });
